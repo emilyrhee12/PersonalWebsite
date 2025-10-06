@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Emily Rhee</title>
+  <meta name="description" content="Personal website for Emily Rhee — portfolio, resume, and projects.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Emily Rhee</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+
+  <section>
+    <h2>Contact</h2>
+    <p class="muted">Email: <a href="mailto:emrhee@iu.edu">emrhee@iu.edu</a> ·
+      <a href="https://www.linkedin.com/in/emily-rhee/" aria-label="Open LinkedIn profile">LinkedIn</a> ·
+      <a href="https://github.com/emrhee" aria-label="Open GitHub profile">GitHub</a></p>
+
+    <form id="contact-form" action="thankyou.html" method="get" novalidate>
+      <div>
+        <label for="firstName">First Name <span aria-hidden="true">*</span></label>
+        <input id="firstName" name="firstName" type="text" required autocomplete="given-name" aria-describedby="error-firstName">
+        <small id="error-firstName" class="error" aria-live="polite"></small>
+      </div>
+
+      <div>
+        <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+        <input id="lastName" name="lastName" type="text" required autocomplete="family-name" aria-describedby="error-lastName">
+        <small id="error-lastName" class="error" aria-live="polite"></small>
+      </div>
+
+      <div>
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" required autocomplete="email" aria-describedby="error-email">
+        <small id="error-email" class="error" aria-live="polite"></small>
+      </div>
+
+      <div>
+        <label for="password">Password <span aria-hidden="true">*</span></label>
+        <input id="password" name="password" type="password" minlength="8"
+               pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+               title="At least 8 characters, including at least one letter and one number."
+               required aria-describedby="error-password">
+        <small id="error-password" class="error" aria-live="polite"></small>
+      </div>
+
+      <div>
+        <label for="confirmPassword">Confirm Password <span aria-hidden="true">*</span></label>
+        <input id="confirmPassword" name="confirmPassword" type="password" minlength="8" required aria-describedby="error-confirmPassword">
+        <small id="error-confirmPassword" class="error" aria-live="polite"></small>
+      </div>
+
+      <button type="submit">Send</button>
+      <p class="muted">By submitting, you'll be redirected to a Thank You page.</p>
+    </form>
+  </section>
+
+</main>
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Emily Rhee. Built with HTML, CSS, and a sprinkle of JS. Last updated 2025-10-06 00:59.</p>
+    <p><a href=".prompt/dev_notes.md">AI Dev Notes</a></p>
+  </div>
+</footer>
+<script src="scripts.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Emily Rhee</title>
+  <meta name="description" content="Personal website for Emily Rhee — portfolio, resume, and projects.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Emily Rhee</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+
+  <section>
+    <h2>Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="images/Screenshot 2025-09-01 at 2.39.29 PM.png" alt="Screenshot placeholder for Mail Buddy">
+        <h3>Mail Buddy</h3>
+        <p>
+          Mail Buddy is an information system designed to simplify and enhance the mailroom system at Indiana University. It streamlines the process of sorting and delivering mail, making it more efficient for both staff and students.
+        </p>
+      </article>
+      <article class="card">
+        <img src="images/Screenshot 2025-09-01 at 2.50.14 PM.png" alt="Screenshot placeholder for AMA UX Internship">
+        <h3>AMA UX Internship</h3>
+        <p>
+          During my internship at the American Medical Association, I worked on improving the user experience of their digital product "Find a Doctor". I conducted user research, created wireframes, and collaborated with cross-functional teams to implement design solutions.
+        </p>
+      </article>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Emily Rhee. Built with HTML, CSS, and a sprinkle of JS. Last updated 2025-10-06 00:59.</p>
+    <p><a href=".prompt/dev_notes.md">AI Dev Notes</a></p>
+  </div>
+</footer>
+<script src="scripts.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

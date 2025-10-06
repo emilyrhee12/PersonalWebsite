@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume — Emily Rhee</title>
+  <meta name="description" content="Personal website for Emily Rhee — portfolio, resume, and projects.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Emily Rhee</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+
+  <section>
+    <h2>Resume</h2>
+    <p class="muted">This is an HTML version. You can also link a PDF if you prefer.</p>
+    <p><a href="Rhee_Emily_Resume.pdf">Download PDF</a></p>
+
+    <section>
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Master's, Information Systems</strong> — Kelley School of Business, 2026</li>
+        <li><strong>Master's, HCI/d</strong> — Luddy School of Informatics, Computing, and Engineering, 2025</li>
+        <li><strong>Bachelor's, Informatics</strong> — Luddy School of Informatics, Computing, and Engineering, 2023</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Experience</h3>
+      <article class="card">
+        <h4>UX/UI Design Intern, American Medical Association — 2/25-5/25</h4>
+        <ul>
+          <li>Assessed AMA’s “Find a Doctor” tool to identify UX and conversion issues impacting physician engagement </li>
+          <li>Conducted competitive analysis and heuristic evaluation to uncover SEO and usability improvement opportunities</li>
+          <li>Proposed UX enhancements and features to strengthen the value proposition and support strategic digital goals</li>
+          <li>Projected 25% increase in physician engagement when recommended changes are implemented in 2026</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h4>Communication Assistant & Associate Instructor, Indiana University — 8/23-5/25</h4>
+        <ul>
+          <li>Led twice-weekly sessions for 20+ students in the course “Intro to Informatics,” teaching HTML/CSS, Python, Excel, and Figma</li>
+          <li>Supported student skill development by troubleshooting code, clarifying concepts, and offering feedback</li>
+          <li>Aligned lab activities with course objectives and recorded instructional materials to reinforce classroom learning</li>
+          <li>Managed grading workflows and served as the main point of contact for the teaching team, ensuring timely assessments and effective communication</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <p>Design: [Figma, Prototyping, Usability Testing] • Research: [Interviews, Surveys, Synthesis] • Tech: [HTML, CSS, JS, Python]</p>
+    </section>
+
+    <section>
+      <h3>Fun</h3>
+      <ul>
+        <li>20 years of drumming experience; </li>
+        <li>lifelong tennis player with coaching background</li>
+      </ul>
+    </section>
+  </section>
+
+</main>
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Emily Rhee. Built with HTML, CSS, and a sprinkle of JS. Last updated 2025-10-06 00:59.</p>
+    <p><a href=".prompt/dev_notes.md">AI Dev Notes</a></p>
+  </div>
+</footer>
+<script src="scripts.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
